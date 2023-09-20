@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        supportActionBar?.hide()
         // Initialize ImageViews
         val rewardsImageView: ImageView = findViewById(R.id.imageView)
         val mapImageView: ImageView = findViewById(R.id.imageView3)
-        val cameraImageView: ImageView = findViewById(R.id.imageView5)
+        val homeImageView: ImageView = findViewById(R.id.imageView5)
         val observationsImageView: ImageView = findViewById(R.id.imageView6)
         val settingsImageView: ImageView = findViewById(R.id.imageView7)
 
@@ -42,12 +42,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Set onClickListener for Camera
-        cameraImageView.setOnClickListener {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                openCamera()
-            } else {
-                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), CAMERA_REQUEST_CODE)
-            }
+        homeImageView.setOnClickListener {
+          loadFragment(YourInitialFragment())
         }
 
         // Set onClickListener for Observations
