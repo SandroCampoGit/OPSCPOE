@@ -46,10 +46,11 @@
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="312dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:srcCompat="@drawable/pngfind_com_map_pin_png_57891" />
 
@@ -61,21 +62,23 @@
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:srcCompat="@drawable/pngfind_com_home_icon_png_3262665" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="54dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
         android:layout_marginStart="300dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:srcCompat="@drawable/pngfind_com_chat_icons_png_5502092" />
+        app:srcCompat="@drawable/chatbot_icon_removebg_preview__1_" />
 
     <ImageView
         android:id="@+id/imageView7"
